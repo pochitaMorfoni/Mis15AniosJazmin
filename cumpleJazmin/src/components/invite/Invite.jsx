@@ -1,8 +1,7 @@
 import React from 'react'
-import './App.css'
-import calendarGif from './assets/calendar.gif'
-import Card from './card/card.jsx'
-import Contador from './contador/Contador.jsx'
+import CalendarGif from '../../assets/image/calendar.gif'
+import Card from '../card/Card.jsx'
+import Contador from '../contador/Contador.jsx'
 const Invite = () => {
     let color1 = '#8a6179';
     let color2 = '#fff';
@@ -16,14 +15,14 @@ const Invite = () => {
 
             <Contador date={'2026-01-30T20:00:00'} />
             
-            <Card gif={calendarGif} 
+            <Card gif={CalendarGif} 
                 title={"¿CUÁNDO?"} 
                 description={"30 DE ENERO 2026"} 
                 txtColor={color2} 
                 bgColor={color1}
             />
 
-            <Card gif={calendarGif} 
+            <Card gif={CalendarGif} 
                 title={"DONDE?"} 
                 description={"CÁMARA EMPRESARIA DE TANDIL"} 
                 txtColor={color1} 
