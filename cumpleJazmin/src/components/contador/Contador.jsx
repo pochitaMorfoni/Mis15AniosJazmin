@@ -1,5 +1,4 @@
 import Countdown from 'react-countdown';
-import './contador.css';
 
 const CountdownBlocks = ({ date }) => {
   const renderer = ({ days, hours, minutes, seconds, completed }) => {

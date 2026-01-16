@@ -1,3 +1,7 @@
+@use './contador/Contador.scss';
+@use './card/Card.scss';
+
+
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +26,7 @@ h2{
   height: 80vh;
   display: block;
   margin: 0 auto;
-  background-image: url('./assets/jazmin_portada.jpg');
+  background-image: url('../assets/image/jazmin_portada.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
