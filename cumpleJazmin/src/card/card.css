@@ -1,0 +1,34 @@
+.card{
+    height:60vh;
+    width:100%;
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.gif{
+    height:15vh;
+    width:auto;
+}
+
+.button{
+    width: fit-content;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-top: 10px;
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+    border: 2px solid var(--txt-color);
+}
+
+.button:hover{
+    opacity: 0.8;
+    transition: 0.5s;
+    background-color: var(--txt-color);
+    color: var(--bg-color);
+    border: 2px solid var(--bg-color);
+}
