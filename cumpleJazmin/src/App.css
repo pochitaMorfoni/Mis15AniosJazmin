@@ -6,17 +6,6 @@
   overflow-x: hidden;
 }
 
-.banner-container {
-  width: 100vw;
-  height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  background-image: url('./assets/MODELOPAULINA5.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
 h1{
   color: white;
@@ -33,7 +22,7 @@ h2{
   height: 80vh;
   display: block;
   margin: 0 auto;
-  background-image: url('./assets/MODELOPAULINA5.webp');
+  background-image: url('./assets/jazmin_portada.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
