@@ -1,5 +1,6 @@
 import React from 'react'
 import { useEffect,useRef } from 'react';
+import ScrollIcon from '../../assets/icons/scroll-down.png';
 
 
 const Banner = () => {
@@ -37,6 +38,11 @@ const Banner = () => {
   return (
     <React.Fragment>
         <section ref={sectionRef} className="seccion-globos">
+            <div className='presentacion'>
+                <div className='slider'><h3>Desliza para abrir</h3></div>
+                <div className="scroll-icon"><img src={ScrollIcon} alt="Icono de desplazamiento hacia abajo" /></div>
+                
+            </div>
         </section>
 
         <div className="globo globo-izq" />
