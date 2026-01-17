@@ -32,3 +32,61 @@ h2{
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.dresscode {
+  background-color: colors.$background-color;
+  padding: 3rem 1rem 0;
+  text-align: center;
+}
+
+.dresscode-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.hanger-icon {
+  width: 5rem;
+  height: 5rem;
+  color: colors.$itinerary-text;
+}
+
+.dresscode-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.6rem;
+  color: colors.$itinerary-text;
+  margin-bottom: 0.75rem;
+  font-weight: 400;
+}
+
+.dresscode-rsvp {
+  margin-top: 3rem;
+  font-family: 'Cardo', serif;
+  font-size: 1rem;
+  font-style: italic;
+  color: colors.$itinerary-text;
+  opacity: 0.85;
+  display: flex;
+  justify-content: center;
+}
+
+.dresscode-rsvp span {
+  font-weight: 600;
+  font-style: normal;
+  margin-left: 0.5rem;
+}
+
+.dresscode-main {
+  font-family: 'Cardo', serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: colors.$itinerary-text;
+  margin-bottom: 0.25rem;
+}
+
+.dresscode-note {
+  font-family: 'Cardo', serif;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: colors.$itinerary-text;
+}
