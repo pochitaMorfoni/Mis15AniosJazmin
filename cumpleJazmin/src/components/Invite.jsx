@@ -24,12 +24,12 @@ const Invite = () => {
             
             <Banner />
 
-            <Contador date={'2026-01-30T20:00:00'} />
+            <Contador date={'2026-01-31T20:30:00'} />
             
             {/* Fecha del evento */}
             <Card gif={CalendarGif} 
                 title={"¿CUÁNDO?"} 
-                description={"30 DE ENERO 2026"} 
+                description={"31 DE ENERO 2026"} 
                 variant="primary"
             />
 
@@ -61,14 +61,6 @@ const Invite = () => {
                 title="Regalo"
                 description="Nada es más importante que tu presencia. Si deseás hacerme un regalo, habrá una alcancía disponible."
                 variant="primary"
-                textButton="VER CUENTA"
-                extraInfo={
-                    <React.Fragment>
-                        <p><strong>Banco:</strong> Banco Nación</p>
-                        <p><strong>CBU:</strong> 0000000000000000000000</p>
-                        <p><strong>Alias:</strong> MI.ALIAS.CUENTA</p>
-                    </React.Fragment>
-                }
             />
 
             {/* Asistencia */}
@@ -81,7 +73,7 @@ const Invite = () => {
                     </React.Fragment>
                 }
                 variant="white"
-                url="https://wa.me/549XXXXXXXXXX"
+                url="https://wa.me/5492262559594"
                 textButton="ENVIAR RESPUESTA"
             />
 
@@ -98,7 +90,7 @@ const Invite = () => {
             </div>
 
             {/* Image container */}
-            <div class="image-vertical"></div>
+            <div className="image-vertical"></div>
 
             {/* Frase dos */}
             <div className="memory-banner memory-banner--secondary">

@@ -7,7 +7,7 @@ import PauseIcon from '../../assets/icons/pause-button.png';
 
 const MusicPlayer = () => {
   const audioRef = useRef(null);
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   const toggleMusic = () => {
     const audio = audioRef.current;
@@ -31,7 +31,7 @@ const MusicPlayer = () => {
         />
       </button>
 
-      <audio autoPlay ref={audioRef} loop>
+      <audio ref={audioRef} loop>
         <source src={Song} type="audio/mpeg" />
       </audio>
     </React.Fragment>
