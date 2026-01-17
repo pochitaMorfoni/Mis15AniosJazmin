@@ -10,7 +10,8 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "homepage": "https://pochitaMorfoni.github.io/Mis15AniosJazmin"
   },
   "dependencies": {
     "@fontsource-variable/playfair-display": "^5.2.8",
