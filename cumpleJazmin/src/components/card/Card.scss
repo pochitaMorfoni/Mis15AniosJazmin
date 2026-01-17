@@ -1,5 +1,5 @@
 .card{
-    height:60vh;
+    height:50vh;
     width:100%;
     background-color: var(--bg-color);
     color: var(--txt-color);
@@ -7,6 +7,14 @@
     flex-direction:column;
     align-items:center;
     justify-content:center;
+
+    &-place{
+        display: flex;
+        height: 10vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
 }
 
 .gif{

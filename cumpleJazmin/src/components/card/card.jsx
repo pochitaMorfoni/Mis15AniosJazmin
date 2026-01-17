@@ -7,8 +7,10 @@ const card = ({gif,title,description,url,textButton,txtColor,bgColor}) => {
                       '--txt-color': txtColor
                     }}>
         <img src={gif} className='gif'/>
-        <h2>{title}</h2>
-        <p>{description}</p>
+        <div className='card-place'>
+          <h2>{title}</h2>
+          <p>{description}</p>
+        </div>
         {url ? <a href={url} target="_blank" className='button' style={
                     { 
                       '--bg-color': bgColor, 

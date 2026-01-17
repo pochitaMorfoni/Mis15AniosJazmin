@@ -1,5 +1,6 @@
 import React from 'react'
 import CalendarGif from '../assets/image/calendar.gif'
+import MapsGif from '../assets/image/ubicacion.gif'
 import Card from './card/Card.jsx'
 import Contador from './contador/Contador.jsx'
 import './invite.scss'
@@ -27,6 +28,9 @@ const Invite = () => {
                 bgColor={color1}
                 />
 
+            {/* Itinerario */}
+            <Itinerario/>
+            
             {/* Dress Code */}
             <div className="dresscode">
                 <div className="dresscode-icon">
@@ -62,15 +66,13 @@ const Invite = () => {
                 <p className="dresscode-main">Elegante Sport</p>
             </div>
 
-            {/* Itinerario */}
-            <Itinerario/>
 
-            <Card gif={CalendarGif} 
-                title={"DONDE?"} 
-                description={"CÁMARA EMPRESARIA DE TANDIL"} 
+            <Card gif={MapsGif} 
+                title={"Alcira's Eventos"} 
+                description={"Calle 21 1230, Balcarce, Provincia de Buenos Aires"} 
                 txtColor={color1} 
                 bgColor={color2}
-                url={"https://www.google.com/maps/place/C%C3%A1mara+Empresaria+De+Tandil/@-37.3225151,-59.1343717,20z/data=!4m6!3m5!1s0x95911f91c30f134d:0xc8b8e1654fbcea7e!8m2!3d-37.322253!4d-59.1343951!16s%2Fg%2F1ts3gsz8?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoASAFQAw%3D%3D"}
+                url={"https://maps.app.goo.gl/AhDfbRatQYHX3dUk6"}
                 textButton={"CÓMO LLEGAR"}
             />
         </React.Fragment>
