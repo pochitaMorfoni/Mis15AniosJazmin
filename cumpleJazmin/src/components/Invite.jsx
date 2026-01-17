@@ -2,6 +2,7 @@ import React from 'react'
 import CalendarGif from '../assets/image/calendar.gif'
 import Card from './card/Card.jsx'
 import Contador from './contador/Contador.jsx'
+import Banner from './banner/Banner.jsx'
 import './invite.scss'
 
 const Invite = () => {
@@ -10,10 +11,8 @@ const Invite = () => {
     
     return (
         <React.Fragment>
-            <div  className="banner" alt="Banner de cumpleaños">
-            <h1 className='title-banner'>MIS 15</h1>
-            <h2 className='subtitle-banner'>Jazmín</h2>
-            </div>
+            
+            <Banner />
 
             <Contador date={'2026-01-30T20:00:00'} />
             

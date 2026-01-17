@@ -1,6 +1,8 @@
 @use './contador/Contador.scss';
 @use './card/Card.scss';
+@use './banner/Banner.scss';
 
+@import '@fontsource/dancing-script';
 
 * {
   margin: 0;
@@ -8,26 +10,4 @@
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
-}
-
-
-h1{
-  color: white;
-  font-weight: 400;
-}
-
-h2{
-  color: white;
-  font-family: Cardo, sans-serif;
-}
-
-.banner {
-  width: 100vw;
-  height: 80vh;
-  display: block;
-  margin: 0 auto;
-  background-image: url('../assets/image/jazmin_portada.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }

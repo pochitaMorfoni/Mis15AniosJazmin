@@ -1,0 +1,68 @@
+:root {
+  --progress: 0;
+}
+
+.scroll{
+    max-width: 100vw;
+    position: relative;
+}
+
+.seccion-globos{
+    height: 120dvh;
+    width: 100vw;
+    background-color: #ede6e5;
+    position: relative;
+}
+
+.globo {
+  width: 180vw;
+  height: 100dvh;
+  z-index: 2;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  pointer-events: none;
+  will-change: transform;
+}
+
+/* globo izquierdo */
+.globo-izq {
+    position:fixed;
+    top: 0;
+    right: -10%;
+    background-image: url("../../assets/image/globos.png");
+    transform: translateX(calc(-220vw * var(--progress)));
+}
+
+/* globo derecho */
+.globo-der {
+    position: fixed;
+    top: 0;
+    left: -10%;
+    background-image: url("../../assets/image/globos-right.png");
+    transform: translateX(calc(220vw * var(--progress)));
+}
+
+h1{
+  color: white;
+  font-weight: bold;
+    font-family: 'Dancing Script', sans-serif;
+}
+
+h2{
+  color: white;
+  font-family: 'Dancing Script', cursive;
+}
+
+.banner {
+  width: 100vw;
+  height: 80vh;
+  display: block;
+  margin: 0 auto;
+  background-image: url('../../assets/image/jazmin_portada.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
