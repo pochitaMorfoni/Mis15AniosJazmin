@@ -45,9 +45,12 @@ const Banner = () => {
         <div className="globo globo-izq" />
         <div className="globo globo-der" />
 
-        <div  className="banner" alt="Banner de cumpleaños">
-            <h1 className='title-banner'>MIS 15</h1>
-            <h2 className='subtitle-banner'>Jazmín</h2>
+        <div className="banner" alt="Banner de cumpleaños">
+            <div className='text-banner'>
+                <p className='title-banner'>MIS 15</p>
+                <h1 className='subtitle-banner'>Jazmín</h1>
+            </div>
+            
         </div>
         
     </React.Fragment>

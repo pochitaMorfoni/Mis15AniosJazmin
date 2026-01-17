@@ -1,7 +1,23 @@
+@use '../../scss/colors';
+
+.container-countdown {
+  position: relative;
+  height: 0;
+  z-index: 10;
+  overflow: visible;
+}
+
 .countdown {
+  position: absolute;
+  top: -3.5rem;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  gap: 12px;
+  width: 100%;
+  gap: 16px;
+  flex-wrap: wrap;
   justify-content: center;
+  padding: 20px;
 }
 
 .time-block {
@@ -11,15 +27,18 @@
   border-radius: 10px;
   min-width: 70px;
   text-align: center;
+  background-color: colors.$countdown-bg;
 }
 
 .time-number {
   font-size: 24px;
   font-weight: bold;
   display: block;
+  font-family: 'Dancing Script', cursive;
 }
 
 .time-label {
   font-size: 12px;
   opacity: 0.8;
+  font-family: 'Dancing Script', cursive;
 }
