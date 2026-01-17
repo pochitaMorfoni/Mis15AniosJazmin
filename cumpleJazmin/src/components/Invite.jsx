@@ -5,6 +5,7 @@ import RegaloGif from '../assets/image/regalo.gif'
 import Card from './card/Card.jsx'
 import Contador from './contador/Contador.jsx'
 import Banner from './banner/Banner.jsx'
+import MusicPlayer from './music-player/MusicPlayer.jsx'
 import './invite.scss'
 import Itinerario from './Itinerario/Itinerario.jsx'
 import '@fontsource/dancing-script/400.css'
@@ -16,6 +17,8 @@ const Invite = () => {
     
     return (
         <React.Fragment>
+
+            <MusicPlayer />
             
             <Banner />
 
