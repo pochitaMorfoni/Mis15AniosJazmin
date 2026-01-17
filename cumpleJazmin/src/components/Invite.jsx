@@ -7,6 +7,7 @@ import Banner from './banner/Banner.jsx'
 import './invite.scss'
 import Itinerario from './Itinerario/Itinerario.jsx'
 import '@fontsource/dancing-script/400.css'
+import '@fontsource/playfair-display'
 
 const Invite = () => {
     let color1 = '#8a6179';
