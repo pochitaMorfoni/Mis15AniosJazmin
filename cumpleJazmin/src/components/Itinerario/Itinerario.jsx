@@ -44,6 +44,10 @@ const Itinerario = () => {
           </div>
         ))}
       </div>
+
+      <p className="dresscode-rsvp">
+        Confirmar asistencia hasta <span> 23-01-2036</span>
+      </p>
     </section>
   )
 }

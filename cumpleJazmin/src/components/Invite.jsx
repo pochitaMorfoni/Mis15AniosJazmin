@@ -1,5 +1,6 @@
 import React from 'react'
 import CalendarGif from '../assets/image/calendar.gif'
+import MapsGif from '../assets/image/ubicacion.gif'
 import Card from './card/Card.jsx'
 import Contador from './contador/Contador.jsx'
 import Banner from './banner/Banner.jsx'
@@ -24,17 +25,53 @@ const Invite = () => {
                 description={"30 DE ENERO 2026"} 
                 txtColor={color2} 
                 bgColor={color1}
-            />
+                />
 
             {/* Itinerario */}
             <Itinerario/>
+            
+            {/* Dress Code */}
+            <div className="dresscode">
+                <div className="dresscode-icon">
+                    <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="hanger-icon"
+                    >
+                        <path
+                            d="M12 4c1.1 0 2 .9 2 2 0 .8-.4 1.4-1 1.8l-1 0.7c-.4.3-.6.6-.6 1v.5"
+                            stroke="currentColor"
+                            strokeWidth="1.2"
+                            strokeLinecap="round"
+                        />
+                        <path
+                            d="M4 14l8-4 8 4"
+                            stroke="currentColor"
+                            strokeWidth="1.2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                        />
+                        <path
+                            d="M6 15h12"
+                            stroke="currentColor"
+                            strokeWidth="1.2"
+                            strokeLinecap="round"
+                        />
+                    </svg>
+                </div>
 
-            <Card gif={CalendarGif} 
-                title={"DONDE?"} 
-                description={"CÁMARA EMPRESARIA DE TANDIL"} 
+                <p className="dresscode-title">Código de vestimenta:</p>
+                <p className="dresscode-main">Elegante Sport</p>
+            </div>
+
+
+            <Card gif={MapsGif} 
+                title={"Alcira's Eventos"} 
+                description={"Calle 21 1230, Balcarce, Provincia de Buenos Aires"} 
                 txtColor={color1} 
                 bgColor={color2}
-                url={"https://www.google.com/maps/place/C%C3%A1mara+Empresaria+De+Tandil/@-37.3225151,-59.1343717,20z/data=!4m6!3m5!1s0x95911f91c30f134d:0xc8b8e1654fbcea7e!8m2!3d-37.322253!4d-59.1343951!16s%2Fg%2F1ts3gsz8?entry=ttu&g_ep=EgoyMDI2MDEwNy4wIKXMDSoASAFQAw%3D%3D"}
+                url={"https://maps.app.goo.gl/AhDfbRatQYHX3dUk6"}
                 textButton={"CÓMO LLEGAR"}
             />
         </React.Fragment>
