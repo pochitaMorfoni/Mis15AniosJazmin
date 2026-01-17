@@ -2,6 +2,8 @@ import React from 'react'
 import CalendarGif from '../assets/image/calendar.gif'
 import MapsGif from '../assets/image/ubicacion.gif'
 import RegaloGif from '../assets/image/regalo.gif'
+import DressCode from '../assets/image/dresscode.gif'
+import Heart from '../assets/image/heart.gif'
 import Card from './card/Card.jsx'
 import Contador from './contador/Contador.jsx'
 import Banner from './banner/Banner.jsx'
@@ -34,39 +36,14 @@ const Invite = () => {
             {/* Dress Code */}
             <div className="dresscode">
                 <div className="dresscode-icon">
-                    <svg
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="hanger-icon"
-                    >
-                        <path
-                            d="M12 4c1.1 0 2 .9 2 2 0 .8-.4 1.4-1 1.8l-1 0.7c-.4.3-.6.6-.6 1v.5"
-                            stroke="currentColor"
-                            strokeWidth="1.2"
-                            strokeLinecap="round"
-                        />
-                        <path
-                            d="M4 14l8-4 8 4"
-                            stroke="currentColor"
-                            strokeWidth="1.2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                        />
-                        <path
-                            d="M6 15h12"
-                            stroke="currentColor"
-                            strokeWidth="1.2"
-                            strokeLinecap="round"
-                        />
-                    </svg>
+                    <img src={DressCode} className="gif" />
                 </div>
 
                 <p className="dresscode-title">Código de vestimenta:</p>
                 <p className="dresscode-main">Elegante Sport</p>
             </div>
 
-
+            {/* Ubicacion */}
             <Card gif={MapsGif} 
                 title={"¿DÓNDE?"} 
                 description={"Alcira's Eventos.\nCalle 21 1230, Balcarce."}
@@ -75,6 +52,7 @@ const Invite = () => {
                 textButton={"CÓMO LLEGAR"}
             />
 
+            {/* Regalo */}
             <Card
                 gif={RegaloGif}
                 title="Regalo"
@@ -88,6 +66,54 @@ const Invite = () => {
                         <p><strong>Alias:</strong> MI.ALIAS.CUENTA</p>
                     </React.Fragment>
                 }
+            />
+
+            {/* Asistencia */}
+            <Card
+                gif={MapsGif}
+                title="ASISTENCIA"
+                description={
+                    <React.Fragment>
+                        Agradecemos confirmar presencia antes del <span>23/01/2026</span>
+                    </React.Fragment>
+                }
+                variant="white"
+                url="https://wa.me/549XXXXXXXXXX"
+                textButton="ENVIAR RESPUESTA"
+            />
+
+            {/* Frase uno */}
+            <div className="memory-banner">
+                <div className="memory-line" />
+
+                <p className="memory-text">
+                    HAY MOMENTOS QUE NO SE PUEDEN BORRAR, PERSONAS QUE NO SE PUEDEN
+                    OLVIDAR Y RECUERDOS COMO ESTOS QUE SIEMPRE VOY A ATESORAR
+                </p>
+
+                <div className="memory-line" />
+            </div>
+
+            {/* Image container */}
+            <div class="image-vertical"></div>
+
+            {/* Frase dos */}
+            <div className="memory-banner memory-banner--secondary">
+                <div className="memory-line" />
+
+                <p className="memory-text">
+                    Prepárate para una noche{' '}
+                    <span className="memory-highlight">¡INOLVIDABLE!</span>
+                </p>
+
+                <div className="memory-line" />
+            </div>
+
+            {/* Agradecimiento */}
+            <Card gif={Heart} 
+                title={"Te espero"} 
+                description={"Jazmin"} 
+                variant="white"
             />
 
         </React.Fragment>
