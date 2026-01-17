@@ -1,7 +1,8 @@
 @use './contador/Contador.scss';
 @use './card/Card.scss';
 @use './banner/Banner.scss';
-
+@use './Itinerario/itinerario.scss';
+@use '../scss/colors';
 @import '@fontsource/dancing-script';
 
 * {
