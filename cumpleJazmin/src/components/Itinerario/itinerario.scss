@@ -1,0 +1,100 @@
+.itinerario {
+    background-color: #efe7e3;
+    padding: 3rem 1rem 3rem;
+  }
+  
+  .itinerario-title {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.6rem;
+    color: #625d5d;
+    margin-bottom: 3rem;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .timeline {
+    position: relative;
+    max-width: 22.5rem;
+    margin: 0 auto;
+  }
+  
+  /* línea central */
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 0.1rem;
+    background-color: #f1b8c8;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-item {
+    position: relative;
+    min-height: 5rem;
+  }
+  
+  /* punto */
+  .dot {
+    position: absolute;
+    left: 50%;
+    top: 1.125rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    background-color: #f1b8c8;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+  
+  /* contenido */
+  .content {
+    width: 40%;
+    font-size: 0.8rem;
+    color: #625d5d;
+  }
+  
+  .time {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.125rem;
+  }
+  
+  .text {
+    font-family: 'Cardo', serif;
+    font-style: italic;
+  }
+  
+  /* izquierda */
+  .timeline-item.left .content {
+    text-align: right;
+    width: 44%;
+  }
+  
+  /* derecha */
+  .timeline-item.right .content {
+    text-align: left;
+    width: 44%;
+    margin-left: auto;
+  }
+  
+  /* iconos */
+  .icon {
+    position: absolute;
+    font-size: 1rem;
+    top: 0.875rem;
+    color: #625d5d;
+  }
+  
+  .timeline-item.left .icon {
+    left: 0.75rem;
+    top: 0.625rem;
+  }
+  
+  .timeline-item.right .icon {
+    right: 1.25rem;
+    top: 0.625rem;
+  }
+  

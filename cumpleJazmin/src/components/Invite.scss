@@ -1,6 +1,7 @@
 @use './contador/Contador.scss';
 @use './card/Card.scss';
-
+@use './Itinerario/itinerario.scss';
+@use '../scss/colors';
 
 * {
   margin: 0;

@@ -3,6 +3,8 @@ import CalendarGif from '../assets/image/calendar.gif'
 import Card from './card/Card.jsx'
 import Contador from './contador/Contador.jsx'
 import './invite.scss'
+import Itinerario from './Itinerario/Itinerario.jsx'
+import '@fontsource/dancing-script/400.css'
 
 const Invite = () => {
     let color1 = '#8a6179';
@@ -11,18 +13,22 @@ const Invite = () => {
     return (
         <React.Fragment>
             <div  className="banner" alt="Banner de cumpleaños">
-            <h1 className='title-banner'>MIS 15</h1>
-            <h2 className='subtitle-banner'>Jazmín</h2>
+                <h1 className='title-banner'>MIS 15</h1>
+                <h2 className='subtitle-banner'>Jazmín</h2>
             </div>
 
             <Contador date={'2026-01-30T20:00:00'} />
             
+            {/* Fecha del evento */}
             <Card gif={CalendarGif} 
                 title={"¿CUÁNDO?"} 
                 description={"30 DE ENERO 2026"} 
                 txtColor={color2} 
                 bgColor={color1}
             />
+
+            {/* Itinerario */}
+            <Itinerario/>
 
             <Card gif={CalendarGif} 
                 title={"DONDE?"} 
