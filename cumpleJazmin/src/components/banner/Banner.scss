@@ -119,6 +119,20 @@
   padding-left: 2rem;
 }
 
+@media (min-width: 1200px) {
+  .banner {
+    min-height: 200dvh;
+
+    h1 {
+      font-size: 12rem;
+    }
+
+    p {
+      font-size: 8rem;
+    }
+  }
+}
+
 .text-banner {
   position: relative;
   top: 50%;
