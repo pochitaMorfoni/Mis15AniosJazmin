@@ -1,6 +1,7 @@
 import React from 'react'
 import CalendarGif from '../assets/image/calendar.gif'
 import MapsGif from '../assets/image/ubicacion.gif'
+import RegaloGif from '../assets/image/regalo.gif'
 import Card from './card/Card.jsx'
 import Contador from './contador/Contador.jsx'
 import Banner from './banner/Banner.jsx'
@@ -24,13 +25,12 @@ const Invite = () => {
             <Card gif={CalendarGif} 
                 title={"¿CUÁNDO?"} 
                 description={"30 DE ENERO 2026"} 
-                txtColor={color2} 
-                bgColor={color1}
-                />
+                variant="primary"
+            />
 
             {/* Itinerario */}
             <Itinerario/>
-            
+
             {/* Dress Code */}
             <div className="dresscode">
                 <div className="dresscode-icon">
@@ -68,13 +68,28 @@ const Invite = () => {
 
 
             <Card gif={MapsGif} 
-                title={"Alcira's Eventos"} 
-                description={"Calle 21 1230, Balcarce, Provincia de Buenos Aires"} 
-                txtColor={color1} 
-                bgColor={color2}
+                title={"¿DÓNDE?"} 
+                description={"Alcira's Eventos.\nCalle 21 1230, Balcarce."}
+                variant={"white"}
                 url={"https://maps.app.goo.gl/AhDfbRatQYHX3dUk6"}
                 textButton={"CÓMO LLEGAR"}
             />
+
+            <Card
+                gif={RegaloGif}
+                title="Regalo"
+                description="Nada es más importante que tu presencia. Si deseás hacerme un regalo, habrá una alcancía disponible."
+                variant="primary"
+                textButton="VER CUENTA"
+                extraInfo={
+                    <React.Fragment>
+                        <p><strong>Banco:</strong> Banco Nación</p>
+                        <p><strong>CBU:</strong> 0000000000000000000000</p>
+                        <p><strong>Alias:</strong> MI.ALIAS.CUENTA</p>
+                    </React.Fragment>
+                }
+            />
+
         </React.Fragment>
     )
 }

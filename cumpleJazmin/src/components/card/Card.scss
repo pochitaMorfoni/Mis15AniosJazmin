@@ -1,42 +1,68 @@
-.card{
-    height:50vh;
-    width:100%;
-    background-color: var(--bg-color);
-    color: var(--txt-color);
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
+@use '../../scss/colors';
 
-    &-place{
-        display: flex;
-        height: 10vh;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
+.card {
+  min-height: 50vh;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+
+  &-place {
+    display: flex;
+    min-height: 12vh;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+
+    p {
+        white-space: pre-line;
     }
+  }
+
+  /* ===== VARIANTS ===== */
+
+  &.primary {
+    background-color: colors.$primary-color;
+    color: colors.$white;
+  }
+
+  &.white {
+    background-color: colors.$white;
+    color: colors.$itinerary-text;
+  }
+
+  &-extra {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }  
 }
 
-.gif{
-    height:15vh;
-    width:auto;
+.gif {
+  height: 15vh;
+  width: auto;
 }
 
-.button{
+.button {
     width: fit-content;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 15px;
     margin-top: 10px;
-    background-color: var(--bg-color);
-    color: var(--txt-color);
-    border: 2px solid var(--txt-color);
-}
-
-.button:hover{
-    opacity: 0.8;
-    transition: 0.5s;
-    background-color: var(--txt-color);
-    color: var(--bg-color);
-    border: 2px solid var(--bg-color);
-}
+    border: 2px solid currentColor;
+    background-color: transparent;
+    color: inherit;
+    transition: opacity 0.3s, transform 0.2s;
+  }
+  
+  .button:hover {
+    opacity: 0.85;
+    transform: scale(1.03);
+  }
+  

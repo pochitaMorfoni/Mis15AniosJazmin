@@ -12,12 +12,11 @@
   overflow-x: hidden;
 }
 
-
-
 .dresscode {
   background-color: colors.$primary-color;
-  padding: 4rem 1rem 4rem;
+  padding: 5rem 1rem 6rem;
   text-align: center;
+  height: 50vh;
 }
 
 .dresscode-icon {
@@ -36,7 +35,6 @@
   font-family: 'Dancing Script', cursive;
   font-size: 1.6rem;
   color: colors.$dressCode-text;
-  margin-bottom: 0.75rem;
   font-weight: 400;
 }
 
@@ -60,7 +58,6 @@
 .dresscode-main {
   font-family: 'Cardo', serif;
   font-size: 1rem;
-  font-weight: 600;
   color: colors.$dressCode-text;
   margin-bottom: 0.25rem;
 }
