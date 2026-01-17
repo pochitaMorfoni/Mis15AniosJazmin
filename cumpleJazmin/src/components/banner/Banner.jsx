@@ -4,7 +4,6 @@ import { useEffect,useRef } from 'react';
 
 const Banner = () => {
 
-    console.log("Banner rendered");
     const sectionRef = useRef(null);
 
     useEffect(() => {
@@ -27,8 +26,6 @@ const Banner = () => {
         "--progress",
         progress
         );
-
-        console.log(progress.toFixed(2));
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
