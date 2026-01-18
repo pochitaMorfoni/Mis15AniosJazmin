@@ -73,7 +73,7 @@ const Invite = () => {
                     </React.Fragment>
                 }
                 variant="white"
-                url="https://wa.me/5492262559594"
+                url="https://wa.me/5492266512377"
                 textButton="ENVIAR RESPUESTA"
             />
 
